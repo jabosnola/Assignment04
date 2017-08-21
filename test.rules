@@ -1,0 +1,135 @@
+alert tcp any any -> any 80 (msg:"test rule"; content:"GET / HTTP/1.1"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+
+alert tcp any any -> any 80 (msg:"naver rule"; content:"GET / HTTP/1.1"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+
+
+#http://avnana.com
+alert tcp any any -> any 80 (msg:"avnana"; content:"GET / HTTP/1.1"; content:"Host: avnana.com"; sid:10003; rev:1;)
+
+alert tcp any any -> any 80 (msg:"ilbe"; content:"GET /ilbe HTTP/1.1"; content: "Host: www.ilbe.com"; sid:10004; rev:1;)
+
+alert tcp any any -> any 80 (msg:"faa25"; content:"GET / HTTP/1.1"; content: "Host: www.faa25.com"; sid:10005; rev:1;)
+
+alert tcp any any -> any 80 (msg:"narutoxxx"; content:"GET / HTTP/1.1"; content: "Host: www.narutoxxx.com"; sid:10006; rev:1;)
+
+alert tcp any any -> any 80 (msg:"umj262"; content:"GET / HTTP/1.1"; content: "Host: www.umj262.com"; sid:10007; rev:1;)
+
+
+#http://www.minjok.com
+alert tcp any any -> any 80 (msg:"minjok"; content:"GET / HTTP/1.1"; content: "Host: www.minjok.com"; sid:10008; rev:1;)
+
+#http://www.4shared.com
+alert tcp any any -> any 80 (msg:"4shared"; content:"GET / HTTP/1.1"; content: "Host: www.4shared.com"; sid:10009; rev:1;)
+
+#http://kcna.kp/
+alert tcp any any -> any 80 (msg:"kcna"; content:"GET / HTTP/1.1"; content: "Host: kcna.kp"; sid:10010; rev:1;)
+
+#http://pornpros.com
+alert tcp any any -> any 80 (msg:"pornpros"; content:"GET / HTTP/1.1"; content: "Host: pornpros.com"; sid:10011; rev:1;)
+
+#http://www.kimmadam.net/
+alert tcp any any -> any 80 (msg:"kimmadam"; content:"GET / HTTP/1.1"; content: "Host: www.kimmadam.net"; sid:10012; rev:1;)
+
+#http://kitribob.wiki/wiki/
+alert tcp any any -> any 80 (msg:"kitribob"; content:"GET /wiki/ HTTP/1.1"; content: "Host: kitribob.wiki"; sid:10013; rev:1;)
+
+#http://chosonsinbo.com/
+alert tcp any any -> any 80 (msg:"chosoninbo"; content:"GET / HTTP/1.1"; content: "Host: chosoninbo.com"; sid:10014; rev:1;)
+
+#http://www.bamwar25.com/
+alert tcp any any -> any 80 (msg:"bamwar25"; content:"GET / HTTP/1.1"; content: "Host: www.bamwar25.com"; sid:10015; rev:1;)
+
+#http://hitomi.la
+alert tcp any any -> any 80 (msg:"hitomi"; content:"GET / HTTP/1.1"; content: "Host: hitomi.la"; sid:10016; rev:1;)
+
+#http://www.winclub88.net/my/4D.html
+alert tcp any any -> any 80 (msg:"winclub"; content:"GET /my/$D.html HTTP/1.1"; content: "Host: www.winclub88.net"; sid:10017; rev:1;)
+
+#http://named.com/game/ladder/v2_index.php
+alert tcp any any -> any 80 (msg:"named"; content:"GET /game/ladder/v2_index.php HTTP/1.1"; content: "Host: named.com"; sid:10018; rev:1;)
+
+#http://www.torenzoa.net
+alert tcp any any -> any 80 (msg:"torenzoa"; content:"GET / HTTP/1.1"; content: "Host: www.torenzoa.net"; sid:10019; rev:1;)
+
+#http://naver6.com
+alert tcp any any -> any 80 (msg:"naver6"; content:"GET / HTTP/1.1"; content: "Host: naver6.com"; sid:10020; rev:1;)
+
+#http://www.naver.cm
+alert tcp any any -> any 80 (msg:"naver.com"; content:"GET / HTTP/1.1"; content: "Host: www.naver.cm"; sid:10021; rev:1;)
+
+#http://www.sedisk.com
+alert tcp any any -> any 80 (msg:"sedisk"; content:"GET / HTTP/1.1"; content: "Host: www.sedisk.com"; sid:10022; rev:1;)
+
+#http://ks8282.com/
+alert tcp any any -> any 80 (msg:"ks8282"; content:"GET / HTTP/1.1"; content: "Host: ks8282.com"; sid:10023; rev:1;)
+
+#http://www.sk386.com/
+alert tcp any any -> any 80 (msg:"sk386"; content:"GET / HTTP/1.1"; content: "Host: www.sk386.com"; sid:10024; rev:1;)
+
+alert tcp any any -> any 80 (msg:"mkmk35.com"; content:"GET / HTTP/1.1"; content: "Host: mkmk35.com"; sid:10025; rev:1;)
+
+#http://uriminzokkiri.com
+alert tcp any any -> any 80 (msg:"uriminzokkiri"; content:"GET / HTTP/1.1"; content: "Host: uriminzokkiri.com"; sid:10026; rev:1;)
+
+#http://www.tcosc.net/
+alert tcp any any -> any 80 (msg:"tcosc"; content:"GET / HTTP/1.1"; content: "Host: www.tcosc.net"; sid:10027; rev:1;)
+
+#http://anti666.com/
+alert tcp any any -> any 80 (msg:"anti666"; content:"GET / HTTP/1.1"; content: "Host: anti666.com"; sid:10028; rev:1;)
+
+#http://bogobogo.net/
+alert tcp any any -> any 80 (msg:"bogobogo"; content:"GET / HTTP/1.1"; content: "Host: bogobogo.net"; sid:10029; rev:1;)
+
+#http://snoopspy.com/download
+alert tcp any any -> any 80 (msg:"snoopspy/download"; content:"GET /download HTTP/1.1"; content:"Host: snoopspy.com"; sid:100030; rev:1;)
+
+#http://test.gilgil.net/streaming/test.mp4
+alert tcp any any -> any 80 (msg:"test.gilgil"; content:"GET /streaming/test.mp4 HTTP/1.1"; content: "Host: test.gilgil.net"; sid:10031; rev:1;)
+
+#http://naevr.com/
+alert tcp any any -> any 80 (msg:"naevr"; content:"GET / HTTP/1.1"; content: "Host: naevr.com"; sid:10032; rev:1;)
+
+#http://ecloo.tcosc.net/
+alert tcp any any -> any 80 (msg:"ecloo.tcosc"; content:"GET / HTTP/1.1"; content: "Host: ecloo.tcosc.net"; sid:10033; rev:1;)
+
+#http://onaratv.com/
+#server not found
+
+#http://www.ryomyong.com
+alert tcp any any -> any 80 (msg:"ryomyong"; content:"GET / HTTP/1.1"; content: "Host: http://www.ryomyong.com"; sid:10034; rev:1;)
+
+#http://rodong.rep.kp/
+alert tcp any any -> any 80 (msg:"rodong"; content:"GET / HTTP/1.1"; content: "Host: rodong.rep.kp/"; sid:10035; rev:1;)
+
+#http://linoit.com/users/men1212/canvases/19%EA%B8%88%20
+alert tcp any any -> any 80 (msg:"linoit"; content:"GET /users/men1212/canvases/19%EA%B8%88%20 HTTP/1.1"; content: "Host: linoit.com"; sid:10036; rev:1;)
+
+#http://kass.org.kp/
+alert tcp any any -> any 80 (msg:"kass"; content:"GET / HTTP/1.1"; content: "Host: kass.org.kp"; sid:10037; rev:1;)
+
+#http://gnu.rep.kp/
+alert tcp any any -> any 80 (msg:"gnu.rep"; content:"GET / HTTP/1.1"; content: "Host: gnu.rep.kp"; sid:10038; rev:1;)
+
+#https://sex.com
+alert tls any any -> any any (msg:"sex"; tls_sni; content:"sex"; nocase; sid:10039; rev:1;)
+
+#https://www.facebook.com/profile.php?id=100019007882633
+
+#https://www.mtbucks.com
+
+#https://torrentkim10.net
+
+#https://www.opioids.com/offshorepharmacy/index.html
+
+#https://yobit.net/en/dice/
+
+#https://graphgame.net/
+
+#https://www.phishtank.com/
+
+#https://mujige53770.wixsite.com
+
+
+#https://torrenthaja.com
+
+#https://webtoon.bamtoki.com/
