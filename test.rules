@@ -110,8 +110,10 @@ alert tcp any any -> any 80 (msg:"kass"; content:"GET / HTTP/1.1"; content: "Hos
 #http://gnu.rep.kp/
 alert tcp any any -> any 80 (msg:"gnu.rep"; content:"GET / HTTP/1.1"; content: "Host: gnu.rep.kp"; sid:10038; rev:1;)
 
+#https://graphgame.net/
+alert tls any any -> any any (msg:"graphgame"; tls_sni; content:"graphgame"; nocase; sid:10039; rev:1;)
+
 #https://sex.com
-alert tls any any -> any any (msg:"sex"; tls_sni; content:"sex"; nocase; sid:10039; rev:1;)
 
 #https://www.facebook.com/profile.php?id=100019007882633
 
@@ -122,8 +124,6 @@ alert tls any any -> any any (msg:"sex"; tls_sni; content:"sex"; nocase; sid:100
 #https://www.opioids.com/offshorepharmacy/index.html
 
 #https://yobit.net/en/dice/
-
-#https://graphgame.net/
 
 #https://www.phishtank.com/
 
